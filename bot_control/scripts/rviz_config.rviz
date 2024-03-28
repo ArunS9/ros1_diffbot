@@ -1,0 +1,8 @@
+<launch>
+  <config>
+    <rviz default_plugin="rviz/PointCloud2">
+      <PointCloud2 name="Filtered Laser Scan" topic="/filtered_scan" />
+    </rviz>
+  </config>
+</launch>
+

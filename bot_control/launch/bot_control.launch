@@ -1,0 +1,8 @@
+<launch>
+    <!-- Launch the reading_laser.py script -->
+    <node name="reading_laser_node" pkg="bot_control" type="reading_laser.py" output="screen" />
+
+    <!-- RViz configuration for visualizing the filtered scan data -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bot_control)/config/rviz_config.rviz" />
+</launch>
+

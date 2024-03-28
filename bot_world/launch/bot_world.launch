@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch Gazebo with the specified world file -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find bot_world)/worlds/bot_world.world"/>
+  </include>
+
+  <!-- Spawn URDF robot model in Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model my_robot -param robot_description -x 0 -y 0 -z 0"/>
+</launch>
+
